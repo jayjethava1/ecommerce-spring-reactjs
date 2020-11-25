@@ -87,12 +87,14 @@ public class AuthenticationRestController {
             String userRole = user.getRoles().iterator().next().name();
             String token = jwtProvider.createToken(request.getEmail(), userRole);
             List<Perfume> perfumeList = user.getPerfumeList();
+            String username=user.getUsername();
 
             Map<Object, Object> response = new HashMap<>();
             response.put("email", request.getEmail());
             response.put("token", token);
             response.put("userRole", userRole);
             response.put("perfumeList", perfumeList);
+            response.put("username",username);
 
             return new ResponseEntity<>(response, HttpStatus.OK);
 

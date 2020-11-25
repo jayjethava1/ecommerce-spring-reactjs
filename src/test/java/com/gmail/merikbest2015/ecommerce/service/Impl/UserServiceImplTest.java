@@ -31,6 +31,7 @@ class UserServiceImplTest {
     public void addUser() {
         User user = new User();
         user.setEmail("testMail@test.com");
+        user.setPassword("Eclerx@123");
 
         boolean isUserCreated = userService.addUser(user);
 

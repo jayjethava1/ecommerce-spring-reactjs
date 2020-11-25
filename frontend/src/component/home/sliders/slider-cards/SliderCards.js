@@ -34,7 +34,7 @@ function SliderCards(props) {
                                             <h6><span>{perfume.price}</span>,00 грн.</h6>
                                             <Link to={`/product/${perfume.id}`}>
                                                 <span className="btn btn-dark">
-                                                    Купить
+                                                Buy
                                                 </span>
                                             </Link>
                                         </div>
@@ -55,7 +55,7 @@ function SliderCards(props) {
     return (
         <div>
             <div className="container text-center my-3" style={{width: "200px"}}>
-                <h4>Новинки</h4>
+                <h4>New items</h4>
             </div>
 
             <div className="container mt-5" id="indicators">

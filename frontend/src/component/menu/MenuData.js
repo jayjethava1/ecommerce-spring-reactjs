@@ -26,8 +26,8 @@ const perfumer = [
 ]
 
 const gender = [
-    {"name": "женский", "label": "для женщин"},
-    {"name": "мужской", "label": "для мужчин"},
+    {"name": "Female", "label": "for Female"},
+    {"name": "Male", "label": "for Male"},
 ]
 
 const price = [

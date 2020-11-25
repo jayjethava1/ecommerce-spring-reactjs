@@ -20,9 +20,9 @@ function UserList(props) {
                 <table className="table">
                     <thead>
                     <tr>
-                        <th scope="col">Имя</th>
+                        <th scope="col">Name</th>
                         <th scope="col">E-mail</th>
-                        <th scope="col">Роль</th>
+                        <th scope="col">Role</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>

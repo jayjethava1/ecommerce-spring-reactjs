@@ -20,6 +20,7 @@ function Login(props) {
                 localStorage.setItem("token", response.data.token);
                 localStorage.setItem("userRole", response.data.userRole);
                 localStorage.setItem("isLoggedIn", true);
+                localStorage.setItem("username",response.data.username);
 
                 setLogged(true);
                 props.setLoggedIn(true);
@@ -36,14 +37,16 @@ function Login(props) {
 
     return (
         <div id="container" className="container mt-5">
-            <h4>Вход в личный кабинет</h4>
+            <h4>
+            Login to your personal account</h4>
             <hr align="left" width="550"/>
             {error ?
                 <div className="alert alert-danger col-6" role="alert">
                     {error}
                 </div> : null}
             <div className="form-group row">
-                <label className="col-sm-2 col-form-label">Электронная почта: </label>
+                <label className="col-sm-2 col-form-label">
+                Email:</label>
                 <div className="col-sm-4">
                     <input className="form-control" type="email" name="email" value={email}
                            onChange={(event) => setEmail(event.target.value)}/>
@@ -51,7 +54,7 @@ function Login(props) {
             </div>
 
             <div className="form-group row">
-                <label className="col-sm-2 col-form-label">Пароль: </label>
+                <label className="col-sm-2 col-form-label">Password: </label>
                 <div className="col-sm-4">
                     <input className="form-control" type="password" name="password" value={password}
                            onChange={(event) => setPassword(event.target.value)}/>
@@ -59,7 +62,7 @@ function Login(props) {
             </div>
 
             <div className="form-group row">
-                <button className="btn btn-dark mx-3" onClick={onClickSignIn}>Вход</button>
+                <button className="btn btn-dark mx-3" onClick={onClickSignIn}>Login</button>
             </div>
         </div>
     );

@@ -38,7 +38,7 @@ function MenuCards({data, itemsPerPage, startFrom, searchByData}) {
     const paginationItem = (
         <ul className="pagination">
             <li className="page-item disabled">
-                <a className="page-link" href="#" tabIndex="-1">Страницы</a>
+                <a className="page-link" href="#" tabIndex="-1">Pages</a>
             </li>
             <li className="page-item">
                 <a className="page-link text-dark" href="#" aria-label="Previous" onClick={prevPage}>
@@ -105,12 +105,12 @@ function MenuCards({data, itemsPerPage, startFrom, searchByData}) {
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Поиск..."
+                                placeholder="Search..."
                                 value={search}
                                 onChange={(event) => setSearch(event.target.value)}
                             />
                         </div>
-                        <button type="submit" className="btn btn-dark">Поиск</button>
+                        <button type="submit" className="btn btn-dark">Search</button>
                     </div>
                 </form>
             </div>
@@ -139,7 +139,7 @@ function MenuCards({data, itemsPerPage, startFrom, searchByData}) {
                                         </div>
                                         <div className="text-center align-items-end mb-3">
                                             <Link to={`/product/${perfume.id}`}>
-                                                <span className="btn btn-dark">Купить</span>
+                                                <span className="btn btn-dark">Buy</span>
                                             </Link>
                                         </div>
                                     </div>

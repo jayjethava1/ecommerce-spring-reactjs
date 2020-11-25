@@ -39,11 +39,12 @@ function Registration(props) {
 
     return (
         <div className="container mt-5">
-            <h4>Регистрация</h4>
+            <h4>Register</h4>
             <hr align="left" width="550"/>
 
             <div className="form-group row">
-                <label className="col-sm-2 col-form-label">Электронная почта: </label>
+                <label className="col-sm-2 col-form-label">Email:
+                </label>
                 <div className="col-sm-4">
                     <input type="email" name="email" value={email}
                            className={emailError ? "form-control is-invalid" : "form-control"}
@@ -54,7 +55,8 @@ function Registration(props) {
             </div>
 
             <div className="form-group row">
-                <label className="col-sm-2 col-form-label">Имя пользователя: </label>
+                <label className="col-sm-2 col-form-label">Username:
+                </label>
                 <div className="col-sm-4">
                     <input type="text" name="username" value={username}
                            className={usernameError ? "form-control is-invalid" : "form-control"}
@@ -65,7 +67,8 @@ function Registration(props) {
             </div>
 
             <div className="form-group row">
-                <label className="col-sm-2 col-form-label">Пароль: </label>
+                <label className="col-sm-2 col-form-label">Password:
+                </label>
                 <div className="col-sm-4">
                     <input type="password" name="password" value={password}
                            className={passwordError ? "form-control is-invalid" : "form-control"}
@@ -76,7 +79,7 @@ function Registration(props) {
             </div>
 
             <div className="form-group row">
-                <label className="col-sm-2 col-form-label">Повторите пароль: </label>
+                <label className="col-sm-2 col-form-label">Confirm password: </label>
                 <div className="col-sm-4">
                     <input type="password" name="password2" value={password2}
                            className={password2Error ? "form-control is-invalid" : "form-control"}
@@ -87,7 +90,7 @@ function Registration(props) {
             </div>
 
             <div className="form-group row">
-                <button className="btn btn-dark mx-3" onClick={onClickSignUp}>Регистрация</button>
+                <button className="btn btn-dark mx-3" onClick={onClickSignUp}>Signup</button>
             </div>
 
             <ReCAPTCHA onChange={onChangeRecaptcha} sitekey="6Lc5cLkZAAAAAN8mFk85HQieB9toPcWFoW0RXCNR"/>

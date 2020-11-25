@@ -15,14 +15,15 @@ function NavBar(props) {
     if (props.isLoggedIn) {
         links = (
             <li className="nav-item">
-                <Link to={"/account"}><span className="nav-link pl-5 pr-5">ЛИЧНЫЙ КАБИНЕТ</span></Link>
+                <Link to={"/account"}><span className="nav-link pl-5 pr-5">Welcome {localStorage.getItem("username")}</span></Link>
             </li>
+       
         );
-
+        console.log(props);
         signOut = (
             <div>
                 <Link to={"/"} onClick={handleLogout}>
-                    <button className="btn btn-dark mr-3" style={{color: "white"}}>Выход</button>
+                    <button className="btn btn-dark mr-3" style={{color: "white"}}>Logout</button>
                 </Link>
             </div>
         );
@@ -31,10 +32,10 @@ function NavBar(props) {
         links = (
             <>
                 <li className="nav-item">
-                    <Link to={"/login"}><span className="nav-link pl-5 pr-3">ВХОД</span></Link>
+                    <Link to={"/login"}><span className="nav-link pl-5 pr-3">LOGIN</span></Link>
                 </li>
                 <li className="nav-item">
-                    <Link to={"/registration"}><span className="nav-link">РЕГИСТРАЦИЯ</span></Link>
+                    <Link to={"/registration"}><span className="nav-link">REGISTER</span></Link>
                 </li>
             </>
         );
@@ -71,14 +72,14 @@ function NavBar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto ">
                             <li className="nav-item">
-                                <Link to={"/"}><span className="nav-link pl-5 pr-5">ГЛАВНАЯ</span></Link>
+                                <Link to={"/"}><span className="nav-link pl-5 pr-5">HOME</span></Link>
                             </li>
                             <li className="nav-item">
                                 <Link to={{pathname: "/menu", state: {id: "all"}}}>
-                                    <span className="nav-link pl-5 pr-5">ПАРФЮМЕРИЯ</span></Link>
+                                    <span className="nav-link pl-5 pr-5">PERFUMERY</span></Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/contacts"}><span className="nav-link pl-5 pr-5">КОНТАКТЫ</span></Link>
+                                <Link to={"/contacts"}><span className="nav-link pl-5 pr-5">CONTACTS</span></Link>
                             </li>
                         </ul>
 

@@ -71,10 +71,10 @@ function App(props) {
                     data={products}
                     itemsPerPage={24}
                     searchByData={[
-                        {label: 'Парфюмер', value: 'perfumer'},
-                        {label: 'Название парфюма', value: 'perfumeTitle'},
-                        {label: 'Страна производитель', value: 'country'},
-                        {label: 'Пол', value: 'perfumeGender'}
+                        {label: 'perfumer', value: 'perfumer'},
+                        {label: 'perfumeTitle', value: 'perfumeTitle'},
+                        {label: 'country', value: 'country'},
+                        {label: 'perfumeGender', value: 'perfumeGender'}
                     ]}/>}/>
             <Route exact path="/product/list/edit/:id" component={EditProduct}/>
             <Footer/>

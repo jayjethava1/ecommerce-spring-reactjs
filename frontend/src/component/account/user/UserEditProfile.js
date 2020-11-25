@@ -16,10 +16,11 @@ function UserEditProfile(props) {
     return (
         <div className="container mt-5">
             <AccountNavbar/>
-            <h5>Изменение пароля</h5>
+            <h5>Change Password</h5>
 
             <div className="form-group row mt-5">
-                <label className="col-sm-2 col-form-label">Введите новый пароль: </label>
+                <label className="col-sm-2 col-form-label">
+                Enter a new password:  </label>
                 <div className="col-sm-4">
                     <input type="password"
                            name="password"
@@ -31,7 +32,7 @@ function UserEditProfile(props) {
             </div>
 
             <div>
-                <button className="btn btn-dark">Изменить</button>
+                <button className="btn btn-dark">Edit</button>
             </div>
         </div>
     );

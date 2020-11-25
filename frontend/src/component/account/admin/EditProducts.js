@@ -39,7 +39,7 @@ function EditProducts({data, itemsPerPage, startFrom, searchByData}) {
     const paginationItem = (
         <ul className="pagination">
             <li className="page-item disabled">
-                <a className="page-link" href="#" tabIndex="-1">Страницы</a>
+                <a className="page-link" href="#" tabIndex="-1">Pages</a>
             </li>
             <li className="page-item">
                 <a className="page-link text-dark" href="#" aria-label="Previous" onClick={prevPage}>
@@ -114,7 +114,7 @@ function EditProducts({data, itemsPerPage, startFrom, searchByData}) {
                                     onChange={(event) => setSearch(event.target.value)}
                                 />
                             </div>
-                            <button type="submit" className="btn btn-dark">Поиск</button>
+                            <button type="submit" className="btn btn-dark">Search</button>
                         </div>
                     </form>
                 </div>

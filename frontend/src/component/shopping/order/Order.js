@@ -39,12 +39,12 @@ function Order(props) {
 
     return (
         <div className="container mt-5 pb-5">
-            <p className="h4 mb-4 text-center">Оформление заказа</p>
+            <p className="h4 mb-4 text-center">Checkout</p>
             <br/>
             <div className="row">
                 <div className="col-lg-6">
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Имя:</label>
+                        <label className="col-sm-2 col-form-label">Name:</label>
                         <div className="col-sm-8">
                             <input
                                 type="text"
@@ -57,7 +57,7 @@ function Order(props) {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Фамилия:</label>
+                        <label className="col-sm-2 col-form-label">Surname:</label>
                         <div className="col-sm-8">
                             <input
                                 type="text"
@@ -70,7 +70,7 @@ function Order(props) {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Город:</label>
+                        <label className="col-sm-2 col-form-label">City:</label>
                         <div className="col-sm-8">
                             <input
                                 type="text"
@@ -83,7 +83,7 @@ function Order(props) {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Адрес:</label>
+                        <label className="col-sm-2 col-form-label">Address:</label>
                         <div className="col-sm-8">
                             <input
                                 type="text"
@@ -96,7 +96,7 @@ function Order(props) {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Индекс:</label>
+                        <label className="col-sm-2 col-form-label">Index:</label>
                         <div className="col-sm-8">
                             <input
                                 type="text"
@@ -109,7 +109,7 @@ function Order(props) {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Телефон:</label>
+                        <label className="col-sm-2 col-form-label">Phone:</label>
                         <div className="col-sm-8">
                             <input
                                 type="text"
@@ -159,10 +159,10 @@ function Order(props) {
                         </div>
                     </div>
                     <button className="btn btn-primary btn-lg btn-success px-5 float-right"
-                            onClick={onFormSubmit}>Подтвердить заказ
+                            onClick={onFormSubmit}>Confirm the order
                     </button>
                     <div className="row">
-                        <h4>К оплате : <span>{totalPrice}</span> грн.</h4>
+                        <h4>Confirm the order: ₹<span>{totalPrice}</span>/-</h4>
                     </div>
                 </div>
             </div>

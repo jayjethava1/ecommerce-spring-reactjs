@@ -40,10 +40,10 @@ function Cart(props) {
             {load ? <div>
                     {perfumes.length === 0 ?
                         <div style={{textAlign: "center"}}>
-                            <h2>Корзина пуста</h2>
+                            <h2>Cart is empty</h2>
                         </div> :
                         <div>
-                            <p className="h4 mb-4 text-center">Корзина</p>
+                            <p className="h4 mb-4 text-center">Basket</p>
                             {perfumes.map((perfume) => {
                                 return (
                                     <div className="card mb-3 mx-auto" style={{maxWidth: "940px"}}>
@@ -56,14 +56,14 @@ function Cart(props) {
                                                 <div className="card-body">
                                                     <h5 className="card-title">{perfume.perfumer + " " + perfume.perfumeTitle}</h5>
                                                     <p className="card-text">{perfume.type}</p>
-                                                    <p className="card-text"><span>{perfume.volume}</span> мл.</p>
+                                                    <p className="card-text"><span>{perfume.volume}</span> ml.</p>
                                                 </div>
                                             </div>
                                             <div className="col-2">
                                                 <div className="card-body">
-                                                    <h5 className="card-title"><span>{perfume.price}</span> грн.</h5>
+                                                    <h5 className="card-title">₹<span>{perfume.price}</span>/-</h5>
                                                     <button className="btn btn-warning mb-2"
-                                                            onClick={() => removeFromCart(perfume.id)}>Удалить
+                                                            onClick={() => removeFromCart(perfume.id)}>Remove
                                                     </button>
                                                 </div>
                                             </div>
@@ -75,13 +75,13 @@ function Cart(props) {
 
                             <div className="row">
                                 <div className="col-9">
-                                    <p className="h5 text-right">Итого: <span>{totalCartPrice}</span> грн.
+                                    <p className="h5 text-right">Total: <span>₹{totalCartPrice}</span>/-
                                     </p>
                                 </div>
                                 <div className="col-3">
                                     <div className="form-row">
                                         <Link to={"/order"}>
-                                            <button className="btn btn-success">Оформить заказ</button>
+                                            <button className="btn btn-success">Checkout</button>
                                         </Link>
                                     </div>
                                 </div>

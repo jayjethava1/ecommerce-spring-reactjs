@@ -26,7 +26,7 @@ function EditUser(props) {
             <div className="container mt-5">
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Имя пользователя: </label>
+                    <label className="col-sm-2 col-form-label">Username: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -39,7 +39,7 @@ function EditUser(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Роль: </label>
+                    <label className="col-sm-2 col-form-label">Role: </label>
                     <div className="col-sm-6">
                         <div className="form-check form-check-inline">
                             <label className="form-check-label mr-1" htmlFor="inlineRadio1">USER</label>
@@ -66,7 +66,7 @@ function EditUser(props) {
                     </div>
                 </div>
 
-                <button className="btn btn-dark" onClick={onFormSubmit}>Сохранить</button>
+                <button className="btn btn-dark" onClick={onFormSubmit}>Save</button>
             </div>
         </div>
     );

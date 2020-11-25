@@ -27,13 +27,13 @@ function OrdersList(props) {
                 <table className="table">
                     <thead>
                     <tr>
-                        <th scope="col">Заказ №</th>
-                        <th scope="col">Дата</th>
-                        <th scope="col">Заказчик</th>
-                        <th scope="col">Адресс</th>
-                        <th scope="col">Почтовый индекс</th>
-                        <th scope="col">Товары</th>
-                        <th scope="col">Сумма, грн.</th>
+                        <th scope="col">Order no.</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Postcode</th>
+                        <th scope="col">Products</th>
+                        <th scope="col">Amount, RS</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -49,7 +49,7 @@ function OrdersList(props) {
                                 <th>
                                     {order.perfumeList.map((perfume) => {
                                         return (
-                                            <p>Id товара:
+                                            <p>Id product:
                                                 <Link to={`/product/${perfume.id}`}>{perfume.id}</Link>
                                             </p>
                                         )

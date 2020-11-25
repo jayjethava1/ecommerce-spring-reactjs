@@ -86,7 +86,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Название парфюма: </label>
+                    <label className="col-sm-2 col-form-label">Perfume name: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -100,7 +100,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Парфюмер: </label>
+                    <label className="col-sm-2 col-form-label">Perfumer: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -114,7 +114,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Год выпуска: </label>
+                    <label className="col-sm-2 col-form-label">Year of issue: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -128,7 +128,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Страна: </label>
+                    <label className="col-sm-2 col-form-label">Country: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -142,7 +142,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Тип: </label>
+                    <label className="col-sm-2 col-form-label">A type: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -156,7 +156,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Объем: </label>
+                    <label className="col-sm-2 col-form-label">Volume: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -170,7 +170,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Пол: </label>
+                    <label className="col-sm-2 col-form-label">Floor: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -184,7 +184,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Верхние ноты: </label>
+                    <label className="col-sm-2 col-form-label">Top notes:</label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -198,7 +198,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Средние ноты: </label>
+                    <label className="col-sm-2 col-form-label">Middle notes:</label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -212,7 +212,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Базовые ноты: </label>
+                    <label className="col-sm-2 col-form-label">Base notes: </label>
                     <div className="col-sm-6">
                         <input
                             type="text"
@@ -226,7 +226,7 @@ function EditProduct(props) {
                 </div>
 
                 <div className="form-group row">
-                    <label className="col-sm-2 col-form-label">Цена: </label>
+                    <label className="col-sm-2 col-form-label">Price:</label>
                     <div className="col-sm-6">
                         <input
                             type="text"

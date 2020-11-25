@@ -17,7 +17,7 @@ function Menu(props) {
     })
 
     useEffect(() => {
-        if (allProducts === "женский" || allProducts === "мужской") {
+        if (allProducts === "Female" || allProducts === "Male") {
             window.scrollTo(0, 0);
             ShopService.findPerfumeByGender({perfumeGender: props.location.state.id})
                 .then((response) => {
@@ -75,23 +75,23 @@ function Menu(props) {
         <div className="container d-flex">
             <nav id="sidebar">
                 <div className="sidebar-header">
-                    <h3>Парфюмерия</h3>
+                    <h3>Perfumery</h3>
                 </div>
                 <ul className="list-unstyled components">
 
-                    <h5>Бренд</h5>
+                    <h5>Brand name</h5>
                     <li className="active mb-2" id="homeSubmenu">
                         <Checkbox list={perfumer}
                                   handleFilters={(filters) => handleFilters(filters, "perfumers")}/>
                     </li>
 
-                    <h5>Пол</h5>
+                    <h5>Floor</h5>
                     <li className="active mb-2">
                         <Checkbox list={gender}
                                   handleFilters={(filters) => handleFilters(filters, "genders")}/>
                     </li>
 
-                    <h5>Цена</h5>
+                    <h5>Price</h5>
                     <li className="active mb-2">
                         <RadioCheckbox list={price}
                                        handleFilters={(filters) => handleFilters(filters, "prices")}/>
@@ -100,9 +100,9 @@ function Menu(props) {
             </nav>
 
             <Route exact component={() => <MenuCards data={products} itemsPerPage={16} searchByData={[
-                {label: 'Парфюмер', value: 'perfumer'},
-                {label: 'Название парфюма', value: 'perfumeTitle'},
-                {label: 'Страна производитель', value: 'country'}]}/>}
+                {label: 'Perfumer', value: 'perfumer'},
+                {label: 'perfume Title', value: 'perfumeTitle'},
+                {label: 'Country', value: 'country'}]}/>}
             />
         </div>
     )

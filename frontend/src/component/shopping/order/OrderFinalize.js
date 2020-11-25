@@ -14,8 +14,8 @@ function OrderFinalize(props) {
 
     return (
         <div className="container text-center mt-5">
-            <h2>Спасибо за заказ!</h2>
-            <p>Ваш номер заказа: <span>{orderIndex}</span></p>
+            <h2>thank you for the order!</h2>
+            <p>Your order number: <span>{orderIndex}</span></p>
         </div>
     );
 }
